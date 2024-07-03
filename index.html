@@ -13,30 +13,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="screen1 hide">
+    <div class="screen1">
         <div class="content-screen1">
             <h1>Qual é a sua sorte de hoje?</h1>
 
             <p>Abra o biscoito e descubra!</p>
     
-            <button>
+            <button id="cookie">
                 <img src="./images/fortune-cookie.svg" alt="Biscoito da Sorte">
             </button>
         </div>
 
     </div>
 
-    <div class="screen2">
+    <div class="screen2 hide">
         <h1>Aqui está a sua sorte de hoje:</h1>
 
         <div id="lucky-message">
-            <h2></h2>
+            <h2 id="message"></h2>
         </div>
 
         <img src="./images/opened-cookie.svg" alt="Biscoito da Sorte aberto">
 
-        <button>Abrir outro biscoito</button>
+        <button id="anotherCookie">Abrir outro biscoito</button>
     </div>
     
+
+    <script src="./main.js"></script>
 </body>
 </html>
