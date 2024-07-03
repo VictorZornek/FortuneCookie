@@ -21,6 +21,8 @@ const message = document.querySelector("#message")
 // Eventos
 btnCookie.addEventListener('click', handleCookieButton)
 btnAnotherCookie.addEventListener('click', toggleScreen)
+document.addEventListener('keydown', handleEnterKey)
+
 
 
 // Funções
@@ -41,5 +43,11 @@ function handleCookieButton() {
     toggleScreen()
 
     message.innerText = randomMessage(messages)
+}
+
+function handleEnterKey(e) {
+    if(e.key == 'Enter') {
+        handleCookieButton()
+    }
 }
 
